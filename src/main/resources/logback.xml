@@ -1,0 +1,15 @@
+<configuration>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 自定义日志格式 -->
+        <encoder>
+            <pattern>%cyan([%d{HH:mm:ss}]) %highlight(%-5level) %magenta([%thread]) %yellow(%logger{36}) - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+    <logger name="org.docx4j" level="OFF"/>
+</configuration>
