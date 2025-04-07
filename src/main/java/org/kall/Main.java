@@ -3,6 +3,9 @@ package org.kall;
 import java.util.List;
 
 public class Main {
+    static {
+        System.out.println("hh");
+    }
     public static void main(String[] args) {
         String fileName = KeyWord.OutputFileDirectory.getName()+KeyWord.ExamPaperName.getName()+KeyWord.FileSuffix.getName();
         ProcessDocx processDocx = new ProcessDocx();
